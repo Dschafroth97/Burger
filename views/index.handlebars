@@ -6,27 +6,24 @@
             <div class="col-md-6">
                 {{#each burgers}}
                 {{#unless this.devoured}}
-                <div>
-                    <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                        <button type="submit" class='btn btn-warning burgerOpt'> {{this.id}}.
-                            {{this.burger_name}}</button>
-                    </form>
-                </div>
+                    <button class="change-devour btn btn-warning burgerOpt" data-id="{{id}}" data-newdevour="true">
+                        {{burger_name}}
+                    </button>
                 {{/unless}}
                 {{/each}}
             </div>
 
 
             <div class="col-md-6">
-                {{#each burgers}}
-                {{#if this.devoured}}
-                <div class='burgerDevoured'>
-                    <div>
-                        {{this.burger_name}}
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <div class="burgerDevoured">
+                        {{burger_name}}
                     </div>
-                </div>
-                {{/if}}
-                {{/each}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
             </div>
         </div>
     </div>
@@ -35,15 +32,17 @@
 
 </main>
 
-<h2>Add A Burger Option</h2>
+<h2>Add A Burger!</h2>
 
 <div class="row">
-    <div class="col s12">
-        <form action="/burgers" method="POST">
-            <input type="text" id="name" name="burger_name" placeholder="Choose a Burger!">
-            <div class="row justify-content-center">
-                <button type="submit" class="btn btn-warning addBurgerBtn">Add Ze Burger</button>
+    <div class="col-md-12 text-center">
+        <form class="create-form">
+
+            <div class="form-group">
+                <input type="text" id="ca" name="name" placeholder="Choose a Burger!">
             </div>
+            <button type="submit" class=" btn btn-warning addBurgerBtn">Add Ze Burger</button>
         </form>
+
     </div>
 </div>

@@ -14,6 +14,10 @@ h1 {
     margin: 1rem;
 }
 
+#burgerImg {
+    border-radius: 4rem;
+}
+
 .burgerOpt {
     margin: .2rem;
     border-radius: 2rem;
@@ -33,15 +37,16 @@ h2 {
 }
 
 .addBurgerBtn {
-    border-radius: 2rem;
+    border-radius: 3rem;
     margin: 1rem;
 }
 
-#name {
+#ca {
     border: none;
     border-bottom: solid black .03rem;
 }
 
-#name:hover {
+#ca:hover {
+    border:none;
     border-bottom: solid green .07rem;
 }
