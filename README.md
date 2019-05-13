@@ -16,42 +16,25 @@ A burger logger made with MySQL, Node, Express, Handlebars and a homemade ORM (y
 * Your app will store every burger in a database, whether devoured or not.
 
 
-#### Directory structure
+### Demo
 
-All the recommended files and directories from the steps above should look like the following structure:
+The demo of the burger eating application can be found [I'm an inline-style link](https://mysterious-basin-54432.herokuapp.com/)
 
-```
-.
-├── config
-│   ├── connection.js
-│   └── orm.js
-│ 
-├── controllers
-│   └── burgers_controller.js
-│
-├── db
-│   ├── schema.sql
-│   └── seeds.sql
-│
-├── models
-│   └── burger.js
-│ 
-├── node_modules
-│ 
-├── package.json
-│
-├── public
-│   └── assets
-│       ├── css
-│       │   └── burger_style.css
-│       └── img
-│           └── burger.png
-│   
-│
-├── server.js
-│
-└── views
-    ├── index.handlebars
-    └── layouts
-        └── main.handlebars
-```
+### Installation
+
+To run the application locally, first clone this repository with the following command.
+
+git clone https://github.com/Dschafroth97/Burger.git
+Next, install the application dependencies.
+
+cd Burger
+npm init
+npm install
+
+Finally, run the node server locally.
+
+node server
+
+Now, open the local application on port 8080 at the URL: http://localhost:8080/.
+
+Enjoy and have a burger!
